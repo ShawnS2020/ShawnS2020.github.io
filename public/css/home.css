@@ -1,0 +1,22 @@
+header, footer {
+	background: rgba(0, 255, 200, 1);
+	display: flex;
+	align-items: center;
+}
+
+h1 {
+	font-size: 4em;
+}
+
+.project-section-header {
+	background-color: rgb(255, 80, 50);
+}
+
+.header-text {
+	margin: 20px 0;
+}
+
+.footer-text {
+	margin: 20px 0;
+	font-weight: bold;
+}

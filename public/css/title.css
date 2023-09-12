@@ -1,0 +1,87 @@
+* {
+	font-family: "Helvetica";
+	color: transparent;
+}
+
+body {
+	animation: background 3s .5s forwards;
+	height: 600px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	cursor: none;
+}
+
+@keyframes background {
+	100% { background-color: #000; }
+}
+
+h1 {
+	font-size: 6em;
+	margin: 10px 0;
+}
+
+h2 {
+	text-align: center;
+}
+
+.shawn {
+	animation: opacity 2.5s 3s forwards, namecolor 0s 7s forwards;
+}
+
+.suttie {
+	animation: opacity 2.5s 3.5s forwards, namecolor 0s 7s forwards;
+}
+
+@keyframes opacity {
+	100% { color: #D9F2FF; }
+}
+
+@keyframes namecolor {
+	100% { color: transparent; }
+}
+
+.name {
+	animation: grad 3s 7s forwards;
+	background-size: 200%;
+	-webkit-background-clip: text;
+}
+
+@keyframes grad {
+	0% { 
+		background-image: linear-gradient(90deg, #D9F2FF 50%, #FF5032 50% 54.5%, #72FCFF 54.5% 59%, #FAF0A0 59% 63.55%, #B995E8 63.55% 70%, #44FF75 70% 75%, #72FCFF 75% 81%, #FF5032 81% 85%, #B995E8 85% 89.5%, #72FCFF 89.5% 94%, #44FF75 94% 96%, #FAF0A0 96%);
+	}
+	100% {
+		background-image: linear-gradient(90deg, #D9F2FF 50%, #FF5032 50% 54.5%, #72FCFF 54.5% 59%, #FAF0A0 59% 63.55%, #B995E8 63.55% 70%, #44FF75 70% 75%, #72FCFF 75% 81%, #FF5032 81% 85%, #B995E8 85% 89.5%, #72FCFF 89.5% 94%, #44FF75 94% 96%, #FAF0A0 96%);
+		background-position: right;
+	}
+}
+
+.aspiring {
+	animation: opacity 3s 4.5s forwards, upright .75s 4.5s ease-in reverse;
+	float: left;
+}
+
+.web {
+	animation: opacity 3s 5s forwards, up .75s 5s ease-in reverse;
+	display: inline-block;
+}
+	
+.developer {
+	animation: opacity 3s 5.5s forwards, upleft .75s 5.5s ease-in reverse;
+	float: right;
+}
+
+@keyframes upright {
+	100% {transform: translate(-150px, 150px);}
+}
+
+@keyframes up {
+	100% {transform: translateY(150px);}
+}
+
+@keyframes upleft{
+	100% {transform: translate(150px, 150px);}
+}
+

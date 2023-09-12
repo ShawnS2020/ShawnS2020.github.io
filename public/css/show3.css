@@ -1,0 +1,21 @@
+.section3 h1 {
+	width: 500px;
+	font-size: 7em;
+	text-align: center;
+	-webkit-text-stroke: 10px transparent;
+	color: #111111;
+	background-image: linear-gradient(#111111, #D9F2FF, #111111);
+	-webkit-background-clip: text;
+	padding: 130px 0;
+	margin: -130px 0;
+	background-size: 100% 33.3%;
+	background-repeat: no-repeat;
+}
+
+.section3 h1:hover {
+	animation: move 1.5s linear infinite;
+}
+
+@keyframes move {
+	100% { background-position: 0% 100%; }
+}

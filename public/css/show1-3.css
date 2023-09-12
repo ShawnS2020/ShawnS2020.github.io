@@ -1,0 +1,32 @@
+.christus.outer, .christus .middle, .christus .inner {
+	border-radius: 25px;
+}
+
+.christus.outer {
+	display: inline-flex;
+	height: 200px;
+	width: 200px;
+	margin: 0 1em;
+}
+
+.christus .middle {
+	background-image: linear-gradient(yellow, red);
+	height: 99%;
+	width: 99%;
+}
+
+.christus .inner {
+	height: 180px;
+	width: 180px;
+	background-color: #111111;
+	transition: .5s;
+	padding: 10px;
+	margin: -10px;
+}
+
+.christus:hover .inner {
+	height: 97%;
+	width: 97%;
+	padding: 0;
+	margin: 0;
+}	

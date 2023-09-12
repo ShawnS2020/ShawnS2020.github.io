@@ -1,0 +1,63 @@
+.gratia.outer, .gratia .middle, .gratia .inner {
+	border-radius: 25px;
+}
+
+.gratia.outer {
+	display: inline-flex;
+	height: 200px;
+	width: 200px;
+	overflow: hidden;
+	margin: 0 1em;
+}
+
+.gratia .middle {
+	background-size: 25% 50%;
+	background-repeat: no-repeat;
+	background-position: 50% 0, 50% 100%;
+	padding: 50%;
+	margin: -50%;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	z-index: 0;
+}
+
+.gratia .middle:hover {
+	background-image: linear-gradient(90deg, transparent 25%, yellow), linear-gradient(90deg, #D9F2FF, transparent 75%);
+	animation: trace 4s linear infinite;
+}
+
+@keyframes trace {
+	100% { transform: rotate(360deg); }
+}
+
+.gratia .middle::after {
+	content: "";
+	position: absolute;
+	height: 300px;
+	width: 300px;
+	background: #111111;
+	z-index: -1;
+}
+
+.gratia .middle:hover::after {
+	animation: fade 2s forwards;
+}
+
+@keyframes fade {
+	100% { opacity: 0; }
+}
+
+.gratia .middle:hover .inner {
+	animation: untrace 4s linear infinite;
+}
+
+@keyframes untrace {
+	100% { transform: rotate(-360deg); }
+}
+
+.gratia .inner {
+	height: 97%;
+	width: 97%;
+	background-color: #111111;
+}

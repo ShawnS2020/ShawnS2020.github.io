@@ -1,0 +1,19 @@
+body {
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+iframe {
+	width: 815px;
+	height: 1056px;
+	border: none;
+}
+
+.wrapper {
+	text-align: center;
+}
+
+.header {
+	margin: 50px 0;
+}

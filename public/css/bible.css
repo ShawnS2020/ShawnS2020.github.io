@@ -1,0 +1,33 @@
+body {
+	background-color: lightblue;
+}
+
+iframe {
+	width: 816px;
+	height: 1056px;
+	border: none;
+	transform: scale(.5);
+	margin: -264px -204px;
+	pointer-events: none !important;
+}
+
+.main-heading {
+	text-align: center;
+	margin: 50px 0 80px;
+}
+
+.doc {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 100px 100px;
+	justify-content: center;
+}
+
+.doc-link {
+	text-align: center;
+	color: inherit;
+}
+
+.doc-link p {
+	margin-bottom: 30px;
+}

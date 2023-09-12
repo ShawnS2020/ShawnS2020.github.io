@@ -1,0 +1,42 @@
+* {
+	color: #D9F2FF;
+}
+
+body {
+	background-color: #111111;
+}
+
+header {
+	color: #FFF;
+	flex-direction: column;
+	margin: 2em 0;
+	text-align: center;
+}
+
+header h1 {
+	font-size: 3em;
+	margin: 0 0 .5em;
+}
+
+section {
+	outline: solid;
+	height: 30em;
+	background-color: #363C40;
+	position: relative;
+}
+
+section::before, .sectionblur, .scrollfade {
+	width: 100%;
+	height: 100%;
+}
+
+section::before {
+	content: "";
+	background-image: radial-gradient(transparent 10%, rgba(0, 0, 255, .5), #111111 50%);
+	background-size: 4em 4em;
+}
+
+.sectionblur {
+	position: absolute;
+	background-image: radial-gradient(#111111 50%, transparent 300%);
+}
