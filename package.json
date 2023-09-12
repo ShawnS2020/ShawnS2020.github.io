@@ -1,0 +1,19 @@
+{
+  "name": "shawns2020.github.io",
+  "version": "1.0.0",
+  "description": "GitHub Pages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShawnS2020/ShawnS2020.github.io.git"
+  },
+  "author": "Shawn Suttie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShawnS2020/ShawnS2020.github.io/issues"
+  },
+  "homepage": "https://github.com/ShawnS2020/ShawnS2020.github.io#readme"
+}
