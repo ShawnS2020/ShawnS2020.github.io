@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ShawnS2020/ShawnS2020.github.io/issues"
   },
-  "homepage": "https://github.com/ShawnS2020/ShawnS2020.github.io#readme"
+  "homepage": "https://github.com/ShawnS2020/ShawnS2020.github.io#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
